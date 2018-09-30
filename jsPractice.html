@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .bod{
+                background-color: #6495ed;
+            }
+            .hdr2{
+                color: deeppink;
+                font-family: Georgia;
+                background-color: bisque;
+                margin: 0%;
+                padding: 0%;
+                width: 100%;
+                text-align: center;
+                display: block;
+            }
+
+            .mainp{
+                color:greenyellow;
+            }
+
+            .bttnLewks {
+                background-color: black;
+                color: deeppink;
+            }
+            
+
+            .bttnLewks, onclick{
+                color:darksalmon; 
+
+            } 
+
+            .newLewks {
+                color:darkcyan;
+                background-color: blanchedalmond;
+                opacity: 25%;
+            }
+
+            .longBtn{
+                color:peachpuff;
+                background-color:crimson;
+                display: block;
+                height: 40px;
+                font-size: 15px;
+                font-family: fantasy;
+            }
+        </style>
+    </head>
+    <body class="bod">
+        <h2 class = "hdr2">YERRRRR LOOKITDISS</h2>
+
+        <p id="bttn" class="mainp"> This is my first Javascript Program!</p>
+        <button class ="bttnLewks" type = "button" onclick='document.getElementById("bttn").innerHTML = "AYYYYYYEEEE LMAAAAOOOOOOOOOOOOO"'> Lol Pressit</button>
+
+
+
+        <p style= "color:darkseagreen">In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+        <button class= "newLewks" onclick="document.getElementById('myImage').src='ChubbyElf.jpg'">Look At The Elf</button>
+
+        <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+        <button class= "newLewks" onclick="document.getElementById('myImage').src='PuffSelfie.jpg'">Look At Your Face</button>
+
+        
+        
+        <button class="longBtn" onclick="document.getElementById('bttn').style.color = 'darksalmon'"> I change the first line on the page to dark salmon</button>
+
+
+        <button class="longBtn" onclick="document.getElementById('bttn').style.color = 'greenyellow'"> I change it back to greenyellow</button>
+
+        
+        <!---<button class="hdr2" onclick ="document.getElementById('bod').style.backgroundColor = '#6495ED'"> Lol c'mere n pressdis</button>--->
+        
+    </body>
+</html>
+
+<!---.bttnLewks, onlclick's salmon overrides the pink--->
