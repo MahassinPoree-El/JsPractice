@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .pclass{
+            color: royalblue;
+            background: bisque;
+            opacity: 50%;
+            border: 5px;
+            border-color: green;
+            border-style: double;
+            margin: 0px;
+            padding:20px;
+            width: 100%;
+        }
+
+        #pid{
+            color:fuchsia;
+            background: black;
+            width: 49%;
+            margin-right:25%;
+            margin-left: 25%;
+            padding: 20px;
+        }
+
+        #pid:hover{
+            color:black;
+            background: fuchsia;
+        }
+    </style>
+   
+</head>
+<body>
+    <button onclick ="bye()">Click ME! See what happens!</button>
+    <p class = "pclass">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <p id = "pid">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <button onclick ="change()">Click ME! See what happens!</button>
+
+    <iframe src = "HTMLBasic.html" height = "200px" width = "300px" style ="border-color:deeppink"></iframe>
+<br/>
+<hr>
+<br/>
+
+    <iframe name = "picFrame" src="images/PuffSelfie.jpg" style="height: 400px;width: 600px;border-style: dotted; border-color: darkorange"></iframe>
+
+    <a href = "images/PuffSelfie.jpg" target="picFrame"> CLICK TO SEE FACE</a>
+    <script>
+        function bye(){
+            var x = document.getElementsByClassName("pclass");
+            for(var i = 0; i < x.length; i++)
+            {
+                x[i].style.display="none";
+            }
+        }
+        function change(){
+            document.getElementById("pid").innerHTML = "YEAAAAA BUDDY";
+        }
+    </script>
+</body>
+</html>
