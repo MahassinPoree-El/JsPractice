@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="author" content="Mahassin Poree-El">
+    <meta http-equiv="refresh" content="15">
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0">
     <style>
         .pclass{
             color: royalblue;
@@ -21,12 +24,14 @@
             margin-right:25%;
             margin-left: 25%;
             padding: 20px;
+            font-size:10vw;
         }
 
         #pid:hover{
             color:black;
             background: fuchsia;
         }
+
     </style>
    
 </head>
@@ -36,7 +41,7 @@
     <p id = "pid">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     <button onclick ="change()">Click ME! See what happens!</button>
 
-    <iframe src = "HTMLBasic.html" height = "200px" width = "300px" style ="border-color:deeppink"></iframe>
+    <iframe src = "HTMLBasic.html" height = "auto" max-width="100%" style ="border-color:deeppink"></iframe>
 <br/>
 <hr>
 <br/>
@@ -44,6 +49,9 @@
     <iframe name = "picFrame" src="images/PuffSelfie.jpg" style="height: 400px;width: 600px;border-style: dotted; border-color: darkorange"></iframe>
 
     <a href = "images/PuffSelfie.jpg" target="picFrame"> CLICK TO SEE FACE</a>
+
+    
+    <button onclick ="colorSwap()">Click ME! See what happens!</button>
     <script>
         function bye(){
             var x = document.getElementsByClassName("pclass");
@@ -54,6 +62,10 @@
         }
         function change(){
             document.getElementById("pid").innerHTML = "YEAAAAA BUDDY";
+        }
+
+        function colorSwap(){
+            document.getElementById("pid").style.color = "cornflowerblue";
         }
     </script>
 </body>
